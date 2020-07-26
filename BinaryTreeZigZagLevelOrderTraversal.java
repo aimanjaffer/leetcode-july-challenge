@@ -22,7 +22,7 @@ class BinaryTreeZigZagLevelOrderTraversal{
         helper(root,1,map);  
         
        // System.out.println(map);
-        for(Map.Entry e : map.entrySet()){
+        for(Map.Entry<Integer,List<Integer>> e : map.entrySet()){
             Integer key = (Integer) e.getKey();
             List<Integer> l = (List<Integer>)(e.getValue());
             if( key % 2 == 0 ){             
